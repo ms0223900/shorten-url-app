@@ -6,11 +6,12 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
 ) {
-  const caller = appRouter.createCaller({
-    session: null,
-    db: new PrismaClient(),
-  });
-  console.log();
+  // const caller = appRouter.createCaller({
+  //   session: null,
+  //   db: new PrismaClient(),
+  // });
+  // console.log();
 
-  res.send(await caller.post.getAll());
+  // res.send(await caller.post.getAll());
+  res.send([]); // TODO, connect with other service
 }
